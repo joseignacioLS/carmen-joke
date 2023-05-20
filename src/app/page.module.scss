@@ -1,0 +1,118 @@
+@import "../styles/variables";
+
+.main {
+  width: 100%;
+  height: 100%;
+
+  padding: 1rem;
+
+  display: grid;
+  grid-template-rows: 50% 50%;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    align-self: end;
+    margin-bottom: 3rem;
+  }
+
+  form {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    input {
+      background-color: $clear;
+      color: $dark;
+      outline: 0;
+      border: 0;
+      padding: 1rem 2rem;
+      border-radius: 500px;
+    }
+
+
+  }
+
+  .jokeContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .joke {
+      animation: breath 2s infinite ease;
+    }
+
+    .warning {
+      color: $orange;
+
+    }
+
+  }
+
+  .resolution {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    text-align: center;
+  }
+
+
+}
+
+
+.delayed1s {
+  opacity: 0;
+  animation: appear .6s ease 1s forwards;
+}
+
+
+.delayed2s {
+  opacity: 0;
+  animation: appear .6s ease 2s forwards;
+}
+
+.button {
+  padding: 1rem 2rem;
+  border: 0;
+  outline: 0;
+  border-radius: 500px;
+  font-size: 1rem;
+  font-weight: bold;
+
+  color: $clear;
+  background-color: $orange;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $yellow;
+  }
+}
+
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes breath {
+  50% {
+    opacity: .6;
+  }
+}
