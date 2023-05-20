@@ -27,7 +27,7 @@ const jokes = [
   {
     joke: (
       <span>
-        {"Checking Carmen's for that day"}
+        {"Checking Carmen's agenda for the selected date"}
         <br />
         <HourglassBottomIcon />
       </span>
@@ -59,7 +59,7 @@ const jokes = [
   {
     joke: (
       <span>
-        {"Checking parallel universes"}
+        {"Searching for some free time in parallel universes"}
         <br />
         <HourglassBottomIcon />
       </span>
